@@ -1,0 +1,17 @@
+# Dependencies for AI-powered customer analytics with Container Image
+
+# Core data processing
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=12.0.0
+
+# AWS SDK
+boto3>=1.28.0
+
+# AI/ML dependencies
+fastembed==0.7.4
+onnxruntime
+
+# Memory monitoring
+psutil>=5.9.0
+

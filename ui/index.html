@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Customer Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js" integrity="sha384-cwS6YdhLI7XS60eoDiC+egV0qHp8zI+Cms46R0nbn8JrmoAzV9uFL60etMZhAnSu" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div>
+                    <h1>🤖 AI-Powered Customer Analytics</h1>
+                    <p class="subtitle">Powered by Lambda Managed Instances with FastEmbed Semantic Search</p>
+                    <div class="health-status" id="healthStatus">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">Not connected</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="auth-container">
+                        <div class="auth-pill" id="authPill" onclick="handleAuth()">
+                            <span class="auth-icon" id="authIcon">🔒</span>
+                            <span id="authStatus" class="auth-status">Sign In</span>
+                        </div>
+                        <div class="auth-dropdown" id="authDropdown">
+                            <div class="auth-dropdown-email" id="authDropdownEmail"></div>
+                            <div class="auth-dropdown-divider"></div>
+                            <div class="auth-dropdown-item" onclick="handleSignOut()">Sign Out</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="config-section">
+            <label for="apiEndpoint">API Endpoint:</label>
+            <input type="text" id="apiEndpoint" placeholder="https://your-api-id.execute-api.region.amazonaws.com/prod/analytics">
+            <button onclick="checkHealth()">Test Connection</button>
+            <button class="secondary" onclick="getSystemInfo()">System Info</button>
+        </div>
+
+        <div class="query-section">
+            <h2>Select Analysis Type</h2>
+            <div class="query-grid">
+                <button class="query-btn" onclick="selectQuery('customer_analysis')">
+                    👤 Customer Analysis
+                    <span class="desc">Analyze individual customer behavior, engagement, and purchase patterns</span>
+                </button>
+                <button class="query-btn" onclick="selectQuery('semantic_search')">
+                    🔍 Semantic Search
+                    <span class="desc">AI-powered natural language search to find similar customers</span>
+                </button>
+                <button class="query-btn" onclick="selectQuery('cohort_analysis')">
+                    📊 Cohort Analysis
+                    <span class="desc">Analyze customer segments by device, country, and age group</span>
+                </button>
+            </div>
+
+            <div class="params-section" id="paramsSection">
+                <h3>Parameters</h3>
+                <div id="paramsInputs"></div>
+            </div>
+        </div>
+
+        <div class="results-section" id="resultsSection">
+            <div class="results-header">
+                <h2>Results</h2>
+                <div class="query-meta" id="queryMeta"></div>
+            </div>
+            <div class="results-content" id="resultsContent">
+                <p class="placeholder">Select an analysis type to get started</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
