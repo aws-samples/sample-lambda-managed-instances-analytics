@@ -502,7 +502,7 @@ curl -X POST https://<api-id>.execute-api.us-east-1.amazonaws.com/prod/analytics
 
 ## Container Image Details
 
-> 📘 **For detailed container configuration, build process, and troubleshooting, see [CONTAINER_IMAGE_CONFIG.md](CONTAINER_IMAGE_CONFIG.md)**
+> **For detailed container configuration, build process, and troubleshooting, see [CONTAINER_IMAGE_CONFIG.md](CONTAINER_IMAGE_CONFIG.md)**
 
 **Why Container Image?**
 - FastEmbed + dependencies = ~185MB
@@ -557,7 +557,7 @@ rm -rf .aws-sam/
 
 ## Troubleshooting
 
-> 📘 **For detailed container-specific troubleshooting, see [CONTAINER_IMAGE_CONFIG.md](CONTAINER_IMAGE_CONFIG.md#troubleshooting)**
+> **For detailed container-specific troubleshooting, see [CONTAINER_IMAGE_CONFIG.md](CONTAINER_IMAGE_CONFIG.md#troubleshooting)**
 
 ### Issue: Stack in ROLLBACK_COMPLETE state
 **Error**: `Stack:arn:aws:cloudformation:...:stack/lmi-customer-analytics-with-llm/... is in ROLLBACK_COMPLETE state and can not be updated.`
