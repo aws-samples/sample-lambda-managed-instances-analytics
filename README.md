@@ -2,7 +2,7 @@
 
 Advanced proof-of-concept demonstrating AWS Lambda with FastEmbed for AI-powered customer analytics using semantic search and in-memory processing with container image deployment.
 
-## What is this Project?
+## About this Project
 
 ![Architecture Diagram](customer-analytics-app-architecture.jpg)
 
