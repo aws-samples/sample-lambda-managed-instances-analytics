@@ -17,13 +17,13 @@ This project showcases how to use AWS Lambda with AI/ML capabilities for real-ti
 
 ### Key Features
 
-- 🤖 **FastEmbed Integration**: Semantic search using sentence-transformers/all-MiniLM-L6-v2 model
-- 🔍 **Natural Language Queries**: Find customers like "high value customers" or "frequent browsers"
-- 📊 **Real-Time Analytics**: Customer analysis, cohort segmentation, engagement scoring
-- 🚀 **High Performance**: 100-500ms query times including AI inference
-- 💰 **Cost Effective**: LMI pricing with EC2 Savings Plans support, no separate ML infrastructure needed
-- 🎨 **Modern Web UI**: Interactive dashboard with semantic search interface
-- 📦 **Container Image**: Supports up to 10GB image size (vs 250MB ZIP limit) - [See detailed container configuration →](CONTAINER_IMAGE_CONFIG.md)
+- **FastEmbed Integration**: Semantic search using sentence-transformers/all-MiniLM-L6-v2 model
+- **Natural Language Queries**: Find customers like "high value customers" or "frequent browsers"
+- **Real-Time Analytics**: Customer analysis, cohort segmentation, engagement scoring
+- **High Performance**: 100-500ms query times including AI inference
+- **Cost Effective**: LMI pricing with EC2 Savings Plans support, no separate ML infrastructure needed
+- **Modern Web UI**: Interactive dashboard with semantic search interface
+- **Container Image**: Supports up to 10GB image size (vs 250MB ZIP limit) - [See detailed container configuration →](CONTAINER_IMAGE_CONFIG.md)
 
 ## Performance & Optimization Features
 
