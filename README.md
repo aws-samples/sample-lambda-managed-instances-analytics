@@ -559,27 +559,6 @@ rm -rf .aws-sam/
 
 For troubleshooting guidance refer to [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 
-## Architecture
-
-```
-Browser (localhost:8000)
-    ↓
-Cognito User Pool (JWT Authentication)
-    ↓
-API Gateway (CORS, X-Ray Tracing, Access Logging, Cognito Authorizer)
-    ↓
-Lambda Function (Container Image, 32GB memory, Capacity Provider)
-    ├── FastEmbed Model (all-MiniLM-L6-v2)
-    ├── In-Memory Data (8-10GB)
-    ├── Pandas/NumPy (in container)
-    ├── Embeddings Cache
-    └── KMS Encrypted Environment Variables
-    ↓
-S3 Bucket (Parquet Data)
-    ↓
-ECR (Container Image Repository)
-```
-
 ## Technologies Used
 
 - **AWS Lambda** - Serverless compute with container image support
