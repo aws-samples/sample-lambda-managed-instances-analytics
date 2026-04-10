@@ -79,7 +79,7 @@ The semantic search feature uses advanced caching, sampling, and parallel proces
 ## Project Structure
 
 ```
-lmi-customer-analytics-with-llm/
+sample-lambda-managed-instances-analytics/
 ├── setup-data.sh                  # Data generation + S3 upload script
 ├── deploy-lambda.sh               # SAM build + deploy script (also configures auth)
 ├── template.yml                   # SAM/CloudFormation template (Container Image)
@@ -571,7 +571,7 @@ aws cloudformation delete-stack --stack-name lmi-customer-analytics-with-llm
 aws cloudformation wait stack-delete-complete --stack-name lmi-customer-analytics-with-llm
 
 # Then redeploy
-cd lmi-customer-analytics-with-llm
+cd sample-lambda-managed-instances-analytics
 ./deploy-lambda.sh
 ```
 
