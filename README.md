@@ -599,11 +599,6 @@ For troubleshooting guidance refer to [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 - **Product Recommendations**: Identify customer segments for specific products
 - **Marketing Optimization**: Target high-value customer segments
 
-
-## Contributors
-
-[![Contributors](https://contrib.rocks/image?repo=aws-samples/sample-lambda-managed-instances-analytics&max=2000)](https://github.com/aws-samples/sample-lambda-managed-instances-analytics/graphs/contributors)
-
 ## License
 
 This project is licensed under the Apache-2.0 License.
