@@ -601,7 +601,7 @@ For troubleshooting guidance refer to [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 
 ## Contributors
 
-[![Contributors](https://stg.contrib.rocks/image?repo=aws-samples/sample-lambda-managed-instances-analytics&max=2000)](https://github.com/aws-samples/sample-lambda-managed-instances-analytics/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=aws-samples/sample-lambda-managed-instances-analytics&max=2000)](https://github.com/aws-samples/sample-lambda-managed-instances-analytics/graphs/contributors)
 
 ## License
 
